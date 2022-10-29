@@ -1,3 +1,4 @@
 console.log("This app works  Violla !");
-var ale =alert("Insert your user name ");
- console.log(ale);
+ var username = prompt("Give me  your user  name" );
+
+prompt("Welcome  to Talk Banana " + username);
