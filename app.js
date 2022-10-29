@@ -1,4 +1,10 @@
-console.log("This app works  Violla !");
- var username = prompt("Give me  your user  name" );
+var  btnTranslate = document.querySelector(".btn-translate");
+function clickHandlerA() {
 
-prompt("Welcome  to Talk Banana " + username);
+    console.log("Clicked")
+}
+
+
+function newFunction() {
+    btnTranslate.addEventListener("click", function () { alert("Hel                         lo World!"); });
+}
