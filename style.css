@@ -5,3 +5,16 @@ display:block;
 margin:10 rem;
 padding:5 rem;
 }
+
+
+
+h2{font-size: large;}
+
+
+.output1 {
+    border: black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
