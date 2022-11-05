@@ -1,42 +1,49 @@
 
-h2{font-size: large;
-    margin:24px auto;
+h2
+{
     border: 2em;
     border-color: black;
+    font-size: large;
+    margin:24px auto;
     width: auto;
-    }
+
+}
 
 
-header{
+header
+{
     background-color: yellow;
     color: aqua;
+    font-size: 24px;
     margin:24px 24px 48px 24px;
-    width: auto;
+    padding: 50px;
+    text-align: center;
+    width: auto;   
 }
 
-#btn{
-    color: yellow;
-    margin:24px auto;
+#btn
+{
     border: 2em;
     border-color: black;
-    width: auto;
+    color: rgb(27, 27, 10);
     display: block;
-
-
+    font-size:large;
+    height: 50px;
+    margin:24px auto;
+    width: auto;
+    width: 200px;
 }
-#inputArea{
-    border: red;
-    
-    display:block;
-    width:100%;
-    height: 100px;
+textarea
+{
+    border-color: #cfcfcf;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    columns: 400;
+    display: inline-block;
+    height: 200px;
+    margin:24px 24px 48px 24px;
     padding-bottom: 2%;
-    
+    rows: 500px;
+    width:100%;
 }
-.output1{
-    border: red;
-    margin:24px auto ;
-    
-    width:auto;
-    height: 100px;
-    padding-bottom: 2%;}
