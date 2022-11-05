@@ -1,11 +1,7 @@
-var btnTranslate = document.querySelector("#btn-translate");
+console.log("Script is working from another file ");
+var btn1 =document.querySelector('#btn');
+btn1.addEventListener("click",function clickEventHandler(){
 
-btnTranslate.addEventListener("click", clickHandler)
-var outputDiv =document.querySelector(".output1");
+console.log("clicked")
 
-
-function clickHandler(){
-outputDiv.innerText ="dasfuhuuscdncb"
-+txtInput.value};
-
-}
+})
