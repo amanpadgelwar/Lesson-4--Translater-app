@@ -1,21 +1,42 @@
-textarea{
+
+h2{font-size: large;
+    margin:24px auto;
+    border: 2em;
+    border-color: black;
+    width: auto;
+    }
+
+
+header{
+    background-color: yellow;
+    color: aqua;
+    margin:24px 24px 48px 24px;
+    width: auto;
+}
+
+#btn{
+    color: yellow;
+    margin:24px auto;
+    border: 2em;
+    border-color: black;
+    width: auto;
+    display: block;
+
+
+}
+#inputArea{
+    border: red;
+    
+    display:block;
     width:100%;
-height:10px;
-display:block;
-margin:10 rem;
-padding:5 rem;
-border: red;
+    height: 100px;
+    padding-bottom: 2%;
+    
 }
-
-
-
-h2{font-size: large;}
-
-
-.output1 {
-    border: black;
-    height: 10vh;
-    width: 80%;
-    margin: 1rem;
-    padding: 1rem;
-}
+.output1{
+    border: red;
+    margin:24px auto ;
+    
+    width:auto;
+    height: 100px;
+    padding-bottom: 2%;}
