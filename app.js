@@ -3,10 +3,27 @@ var inputText =document.querySelector('#inputArea');
 
 var outputText =document.querySelector('#OutputText');
 
-btn1.addEventListener("click",function clickEventHandler(){
-outputText.innerHTML ="afkslcnlnlakbkj    "+inputText.value;
-})
+var serverUrl ="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
 
 
+function getTranslationUrl(text)
 
+{
+ 
+return serverUrl+"text="+ text
 
+}
+
+function clickEventHandler()
+
+{
+
+var textInput =inputText.value;
+fetch(getTranslationUrl(textInput))
+.then(Response=> Response.json)
+.then(ourUrlConvertedToJson => console.log(json.contents.translation))
+
+}
+;
+
+btn1.addEventListener("click",clickEventHandler)
