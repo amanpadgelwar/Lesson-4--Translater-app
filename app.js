@@ -3,8 +3,8 @@ var inputText =document.querySelector('#inputArea');
 
 var outputText =document.querySelector('#OutputText');
 
-var serverUrl ="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
-
+//var serverUrl ="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
+var serverUrl ="https://api.funtranslations.com/translate/"
 
 function getTranslationUrl(text)
 
