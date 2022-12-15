@@ -14,6 +14,11 @@ return serverUrl+"?"+"text="+ text
 
 }
 
+function errorHandler(error)
+{
+console.log("error occured! ",error);
+alert("error occured!Please try again after some time")
+}
 function clickEventHandler()
 
 {
