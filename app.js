@@ -26,7 +26,15 @@ function clickEventHandler()
 var textInput =inputText.value;
 fetch(getTranslationUrl(textInput))//input 
 .then(Response => Response.json)//conversion to json
-.then(json => console.log(json.contents.translated))//fetched from api
+.then(json => {
+
+    var translatedText =json.contents.translated;
+outputDiv.innerText =translatedText;
+
+
+
+
+})//fetched from api
 .catch(errorHandler)
 }
 ;
