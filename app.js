@@ -10,7 +10,7 @@ function getTranslationUrl(text)
 
 {
  
-return serverUrl+"text="+ text
+return serverUrl+"?"+"text="+ text
 
 }
 
@@ -19,9 +19,9 @@ function clickEventHandler()
 {
 
 var textInput =inputText.value;
-fetch(getTranslationUrl(textInput))
-.then(Response=> Response.json)
-.then(ourUrlConvertedToJson => console.log(json.contents.translation))
+fetch(getTranslationUrl(textInput))//input 
+.then(Response => Response.json)//conversion to json
+.then(json => console.log(json.contents.translated))//fetched from api
 
 }
 ;
