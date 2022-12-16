@@ -39,4 +39,4 @@ outputDiv.innerText =translatedText;
 }
 ;
 
-btn1.addEventListener("click",clickEventHandler)
+btn1.addEventListener("onclick",clickEventHandler)
