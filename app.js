@@ -4,13 +4,13 @@ var inputText =document.querySelector("#inputArea");
 var outputText =document.querySelector("#OutputText");
 
 //var serverUrl ="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
-var serverUrl ="https://api.funtranslations.com/translate/valspeak.json"
+var serverUrl ="https://api.funtranslations.com/translate/yoda.json"
 
 function getTranslationUrl(text)
 
 {
  
-return serverUrl+"?"+"text="+ text
+return serverUrl+"?"+"text= "+ text
 
 }
 
@@ -26,9 +26,9 @@ function clickEventHandler()
 var textInput =inputText.value;
 fetch(getTranslationUrl(textInput))//input 
 .then(Response => Response.json)//conversion to json
-.then(json => {
+.then(response => {
 
-    var translatedText =json.contents.translated;
+    var translatedText =response.contents.translated;
 outputDiv.innerText =translatedText;
 
 
@@ -39,4 +39,4 @@ outputDiv.innerText =translatedText;
 }
 ;
 
-btn1.addEventListener("onclick",clickEventHandler)
+btn1.addEventListener("click",clickEventHandler)
