@@ -10,7 +10,7 @@ function getTranslationUrl(text)
 
 {
  
-return serverUrl+"?"+"text= "+ text
+return serverUrl+"?"+"text="+ text
 
 }
 
@@ -23,7 +23,7 @@ function clickEventHandler()
 
 {
 
-var textInput =inputText.value;
+var textInput =inputText.innerHTML;
 fetch(getTranslationUrl(textInput))//input 
 .then(Response => Response.json)//conversion to json
 .then(response => {
@@ -34,9 +34,11 @@ outputDiv.innerText =translatedText;
 
 
 
-})//fetched from api
+})
+//fetched from api
+
 .catch(errorHandler)
 }
-;
+
 
 btn1.addEventListener("click",clickEventHandler)
